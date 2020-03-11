@@ -1,0 +1,3 @@
+<h1>Welcome!</h1>
+<div class="alert alert-danger" *ngIf="!auth.loggedIn">Please log in to continue</div>
+<div class="alert alert-success" *ngIf="auth.loggedIn">You are logged in</div>

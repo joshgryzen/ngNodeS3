@@ -1,0 +1,16 @@
+<pre *ngIf="auth.userProfile$ | async as profile">
+
+  <!--<code> {{profile | json}} </code>-->
+  <div class = "row">
+      <div class = "col-md-2">
+          <img class = "rounded float-left" style = "width: 100%" src="{{profile.picture}}">
+      </div>
+      <div class = "col-md-10">
+          <h1>{{profile.nickname}}'s profile</h1> 
+          <p>Email: {{profile.email}}<br>Last Update: {{profile.updated_at}}<br>Role: {{profile.roles}}</p>
+      </div>
+     <!--<div class="alert alert-danger" *ngIf="{{profile.email_verified}}">Verify Your Email</div>-->
+  
+  </div>
+  
+  </pre>
