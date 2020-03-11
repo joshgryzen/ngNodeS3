@@ -1,3 +1,36 @@
-<h1>Welcome!</h1>
-<div class="alert alert-danger" *ngIf="!auth.loggedIn">Please log in to continue</div>
-<div class="alert alert-success" *ngIf="auth.loggedIn">You are logged in</div>
+<body>
+    <div class="content">
+        <header></header>
+        <div class="alert alert-danger" *ngIf="!auth.loggedIn">Please <button (click)="auth.login()" *ngIf="!auth.loggedIn">log in</button> to continue</div>
+        <div class="alert alert-success" *ngIf="auth.loggedIn">You are logged in</div>
+    </div>
+    <footer class="sticky">
+        
+
+        <div id="flex-container">
+<!-- I am not sure why this does not work, the footer works in codepen... -->
+            <div class="card border-primary mb-3" style="max-width: 20rem;">
+                <div class="card-header">How this site is protected</div>
+                <div class="card-body">
+                    <h4 class="card-title"><a href = "https://auth0.com/docs/getting-started/overview">Auth0</a></h4>
+                    <p class="card-text">Auth0 provides authentication and authorization for web-applications. </p>
+                </div>
+            </div>
+            <div class="card border-primary mb-3" style="max-width: 20rem;">
+                <div class="card-header">How your data is stored</div>
+                <div class="card-body">
+                    <h4 class="card-title"><a href = "https://aws.amazon.com/s3/">Amazon AWS S3 Buckets</a></h4>
+                    <p class="card-text">Amazon Web Services' Simple Storage Service provides secure and reliable storage.</p>
+                </div>
+            </div>
+            <div class="card border-primary mb-3" style="max-width: 20rem;">
+                <div class="card-header">How this page is running</div>
+                <div class="card-body">
+                    <h4 class="card-title"><a href = "https://angular.io/">Angular</a> and <a href = "https://nodejs.org/en/about/">Node.js</a></h4>
+                    <p class="card-text">This web-application relies on Angular to construct the front end and Node.js to construct the back end. </p>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+</body>
