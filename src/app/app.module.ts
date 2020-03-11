@@ -12,6 +12,7 @@ import { ProfileComponent } from './profile/profile.component';
 import { FileUploadComponent } from './file-upload/file-upload.component';
 
 import { AppRoutingModule } from './app-routing.module';
+import { UsersComponent } from './users/users.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { AppRoutingModule } from './app-routing.module';
     AboutComponent,
     LoginComponent,
     ProfileComponent,
-    FileUploadComponent
+    FileUploadComponent,
+    UsersComponent
   ],
   imports: [
     BrowserModule,
