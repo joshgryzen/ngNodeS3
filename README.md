@@ -28,4 +28,4 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## Instructions: 
 
-Start the nodejs server by typing in the command: `npm start` in the terminal at `..\ngNodeS3\nodeS3\`. Then, while the nodejs server is still running, start the front end application by typing in the command `ng serve --port 3000 -o` in the terminal at `..\ngNodeS3\`. This will open up the application in your browser to `http://localhost:3000/`. 
+Start the nodejs server by typing in the command: `npm start` in the terminal at `..\ngNodeS3\nodeS3\`. Then, while the nodejs server is still running, start the front end application by typing in the command `ng serve --port 3000 -o` or `npm start` in the terminal at `..\ngNodeS3\`. This will open up the application in your browser to `http://localhost:3000/`. 

@@ -9,12 +9,13 @@
 }
 
 .grid-area {
-  background-color: gray;
+  border: 1px solid darkblue;
   padding: 1em 1em 1em 1em;
   border-radius: 1em;
   text-align: center;
 }
 .header {
+  background-color: lightgrey;
   grid-area: header;
 }
 .main {
@@ -25,6 +26,7 @@
 }
 .sidebar {
   grid-area: sidebar;
+  background-color: lightgrey;
 }
 .footer {
   grid-area: footer;
