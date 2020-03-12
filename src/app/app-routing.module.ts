@@ -6,12 +6,14 @@ import {FileUploadComponent} from './file-upload/file-upload.component';
 import {LoginComponent} from './login/login.component';
 import {ProfileComponent} from './profile/profile.component';
 
+import { AuthGuard } from './auth.guard';
+
 const routes: Routes = [
   {path: '', component: AboutComponent},
-  {path: "file-upload", component: FileUploadComponent},
+  {path: "file-upload", component: FileUploadComponent, canActivate: [AuthGuard]},
   //{path: "file-list", component: FileListComponent},
   {path: "login", component: LoginComponent},
-  {path: "profile", component: ProfileComponent}
+  {path: "profile", component: ProfileComponent, canActivate: [AuthGuard]}
 ];
 
 @NgModule({
