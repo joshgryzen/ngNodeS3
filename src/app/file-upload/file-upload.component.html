@@ -13,12 +13,40 @@
   </section>
   <section class = "grid-area main"><h4>Select a file to upload</h4><form-upload></form-upload></section>
   <section class = "grid-area main2"><h4>Select a file to download</h4><list-upload></list-upload></section>
+  <!--Not sure how to remove files, since I have updated this to upload to an S3 bucket I'm not entirely sure whats going on.-->
   <section class = "grid-area sidebar">
     <form class="form-inline my-2 my-lg-0">
       <input class="form-control mr-sm-2" type="text" placeholder="Search Users">
       <button class="button btn-secondary" type="submit">Search</button>
     </form>
+    <br>
+    <ul class="list-group">
+      <li class="list-group-item d-flex justify-content-between align-items-center">
+        Fake user 1
+      </li>
+      <li class="list-group-item d-flex justify-content-between align-items-center">
+        Fake user 2
+      </li>
+      <li class="list-group-item d-flex justify-content-between align-items-center">
+        Fake user 3
+      </li>
+      <li class="list-group-item d-flex justify-content-between align-items-center">
+        Fake user 4
+      </li>
+      <li class="list-group-item d-flex justify-content-between align-items-center">
+        Fake user 5
+      </li>
+    </ul>
+    <!--I have no idea how I'm going to do this. This is supposed to be a list of users that you can search through. Then you chose one and upload files to a shared page, effectively transfering them. (basically a messaging app with file upload) I can't think of any other way to do it.-->
   </section>
-  <section class = "grid-area footer"></section>
+  <section class = "grid-area footer">
+    <h3>Messages</h3>
+    <div class="form-group">
+      <label for="exampleTextarea">Send a message:</label>
+      <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+      <button class="button btn-secondary" type="submit">Send</button>
+    </div>
+    <!--I was messing around with another tutorial app setting up comments with firebase, although I couldnt get it working, this is still something I want to work on though-->
+  </section>
   
 </body>

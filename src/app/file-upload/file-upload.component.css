@@ -9,24 +9,31 @@
 }
 
 .grid-area {
-  border: 1px solid darkblue;
+
   padding: 1em 1em 1em 1em;
-  border-radius: 1em;
-  text-align: center;
+
+  border: 5px solid white;
+  background-color: rgb(228, 228, 228);
 }
 .header {
-  background-color: lightgrey;
   grid-area: header;
+  text-align: center;
 }
 .main {
+  border: none;
+  background-color: white;
   grid-area: main;
+  text-align: center;
 }
 .main2 {
+  border: none;
+  background-color: white;
   grid-area: main2;
+  text-align: center;
 }
 .sidebar {
+  
   grid-area: sidebar;
-  background-color: lightgrey;
 }
 .footer {
   grid-area: footer;
