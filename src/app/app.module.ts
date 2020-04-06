@@ -14,6 +14,8 @@ import { FileUploadComponent } from './file-upload/file-upload.component';
 import { AppRoutingModule } from './app-routing.module';
 import { UsersComponent } from './users/users.component';
 
+import { AuthGuard } from './auth.guard';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,7 +33,7 @@ import { UsersComponent } from './users/users.component';
     HttpClientModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [AuthGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -7,11 +7,11 @@ import { tap } from 'rxjs/operators';
 @Injectable({
   providedIn: 'root'
 })
-export class AuthGuard implements CanActivate {
+export class AuthGuard {
 
   constructor(private auth: AuthService) {}
 
-  canActivate( //I don't know why this has an error, it works just  fine :/
+  canActivate( //I don't know why this has an error, it works just fine :/
     next: ActivatedRouteSnapshot,
     state: RouterStateSnapshot
   ): Observable<boolean> | Promise<boolean|UrlTree> | boolean {
@@ -24,4 +24,6 @@ export class AuthGuard implements CanActivate {
     );
   }
 
-}
+  
+
+}   
