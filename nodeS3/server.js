@@ -3,7 +3,7 @@ const app = express();
 
 const cors = require('cors')
 const corsOptions = {
-  origin: 'https://angular-file-transfer.herokuapp.com/',
+  origin: 'https://calm-anchorage-77942.herokuapp.com/',
   optionsSuccessStatus: 200
 }
 app.use(cors(corsOptions))
