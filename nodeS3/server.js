@@ -3,7 +3,7 @@ const app = express();
 
 const cors = require('cors')
 const corsOptions = {
-  origin: 'https://calm-anchorage-77942.herokuapp.com/',
+  origin: 'http://localhost:3000',
   optionsSuccessStatus: 200
 }
 app.use(cors(corsOptions))

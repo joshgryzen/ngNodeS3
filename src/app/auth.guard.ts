@@ -11,7 +11,7 @@ export class AuthGuard {
 
   constructor(private auth: AuthService) {}
 
-  canActivate( //I don't know why this has an error, it works just fine :/
+  canActivate(
     next: ActivatedRouteSnapshot,
     state: RouterStateSnapshot
   ): Observable<boolean> | Promise<boolean|UrlTree> | boolean {

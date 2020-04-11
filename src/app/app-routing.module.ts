@@ -11,7 +11,6 @@ import { AuthGuard } from './auth.guard';
 const routes: Routes = [
   {path: '', component: AboutComponent},
   {path: "file-upload", component: FileUploadComponent, canActivate: [AuthGuard]},
-  //{path: "file-list", component: FileListComponent},
   {path: "login", component: LoginComponent},
   {path: "profile", component: ProfileComponent, canActivate: [AuthGuard]}
 ];
