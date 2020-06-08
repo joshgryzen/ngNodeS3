@@ -29,7 +29,3 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ## Instructions: 
 
 Start the nodejs server by typing in the command: `npm start` in the terminal at `..\ngNodeS3\nodeS3\`. Then, while the nodejs server is still running, start the front end application by typing in the command `ng serve --port 3000 -o` or `npm start` in the terminal at `..\ngNodeS3\`. This will open up the application in your browser to `http://localhost:3000/`. 
-
-## Heads up:
-
-Right now I do not have the search users, or messaging functions working(not really started on the search users thing, not sure where to start, and I tried to set up comments on a different angular app with firebase but it did not work). Also right now this is just a communal file dump, not really a file transfer app... I am in need of a bit of assistance :/
